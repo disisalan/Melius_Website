@@ -1,2 +1,2 @@
 from Flask import flask
-print("Hello")
+print("Hello") # This will print "Hello" to the console
