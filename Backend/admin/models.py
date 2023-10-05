@@ -1,6 +1,8 @@
+
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+
 
 
 app = Flask(__name__)
@@ -27,6 +29,21 @@ class BlogPost(db.Model):
  # - is_active
  # - date_joined
  # - date_left_on
+class Member(db.model):
+    id=db.Column(db.Integer,primary_key=True)
+    name=db.column(db.String(100),nullable=False)
+    image=db.column(db.String(255),nullable=False)
+    position=db.column(db.String(100),nullable=False)
+    order=db.column(db.Integer,nullable=False)
+    is_public=db.column(db.Boolean,default=False)
+    is_active=db.column(db.Boolean,default=False)
+    date_joined=db.column(db.Datetime,default=datetime.utcnow)
+    date_left_on=db.column(db.Datetime,default=datetime.utcnow)
+
+
+    
+ # Model name BlogPost,Member
 
 
  # Model name BlogPost,Member
+
