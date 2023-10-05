@@ -1,20 +1,24 @@
-from flask import Flask
+
+from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from datetime import Datetime
+from datetime import datetime
+
+
+
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your_database.db' 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db' 
+
 db = SQLAlchemy(app)
 
-
-
-# blog-post ka model 
- # - Title
- # - Thumbnail
- # - Image 1 (optional)
- # - Image 2 (optional)
- # - Description
- # - Created on
- # - is_public (boolean feild)
+class BlogPost(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(255), nullable=False)
+    thumbnail = db.Column(db.String(255), nullable=False)
+    image1 = db.Column(db.String(255))
+    image2 = db.Column(db.String(255))
+    description = db.Column(db.Text, nullable=False)
+    created_on = db.Column(db.DateTime, default=datetime.utcnow)
+    is_public = db.Column(db.Boolean, default=True)
 
 # members ka model
  # - Name
@@ -33,11 +37,13 @@ class Member(db.model):
     order=db.column(db.Integer,nullable=False)
     is_public=db.column(db.Boolean,default=False)
     is_active=db.column(db.Boolean,default=False)
-    date_joined=db.column(db.Datetime,default=Datetime.utcnow)
-    date_left_on=db.column(db.Datetime,default=Datetime.utcnow)
+    date_joined=db.column(db.Datetime,default=datetime.utcnow)
+    date_left_on=db.column(db.Datetime,default=datetime.utcnow)
 
-if __name__=='__main__':
-    db.create_all()
-    app.run(debug=True,port=8000)
+
     
  # Model name BlogPost,Member
+
+
+ # Model name BlogPost,Member
+
