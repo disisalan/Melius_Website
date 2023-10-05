@@ -1,2 +1,7 @@
-from Flask import flask
-print("Hello") # This will print "Hello" to the console
+from flask import Blueprint
+
+routes_bp = Blueprint('routes', __name__)
+
+@routes_bp.route('/')
+def index():
+    return 'Welcome to home!'
