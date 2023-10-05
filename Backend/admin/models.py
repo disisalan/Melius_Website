@@ -31,14 +31,14 @@ class BlogPost(db.Model):
  # - date_left_on
 class Member(db.model):
     id=db.Column(db.Integer,primary_key=True)
-    name=db.column(db.String(100),nullable=False)
-    image=db.column(db.String(255),nullable=False)
-    position=db.column(db.String(100),nullable=False)
-    order=db.column(db.Integer,nullable=False)
-    is_public=db.column(db.Boolean,default=False)
-    is_active=db.column(db.Boolean,default=False)
-    date_joined=db.column(db.Datetime,default=datetime.utcnow)
-    date_left_on=db.column(db.Datetime,default=datetime.utcnow)
+    name=db.Column(db.String(100),nullable=False)
+    image=db.Column(db.String(255),nullable=False)
+    position=db.Column(db.String(100),nullable=False)
+    order=db.Column(db.Integer,nullable=False)
+    is_public=db.Column(db.Boolean,default=False)
+    is_active=db.Column(db.Boolean,default=False)
+    date_joined=db.Column(db.Datetime,default=datetime.utcnow)
+    date_left_on=db.Column(db.Datetime,default=datetime.utcnow)
 
 
     
