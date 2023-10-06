@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="bg-black text-white flex font-inter">
+        <div className="bg-black text-white flex font-poppins">
             {/* Main */}
             <div className="w-10/12 mx-auto lg:w-3/4">
 
