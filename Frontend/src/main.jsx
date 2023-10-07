@@ -8,7 +8,8 @@ import Navbar from "./Components/nav";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-      <Home />
-      <About />
+      {/* <Home /> */}
+      {/* <About /> */}
+      <Info />
     </React.StrictMode>
 );
