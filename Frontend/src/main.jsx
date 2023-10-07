@@ -6,7 +6,7 @@ import About from "./Components/About";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-      {/* <Home /> */}
-      <About />
+      <Home />
+      {/* <About /> */}
     </React.StrictMode>
 );
