@@ -36,8 +36,10 @@ class Member(db.Model):
     order=db.Column(db.Integer,nullable=False)
     is_public=db.Column(db.Boolean,default=False)
     is_active=db.Column(db.Boolean,default=False)
-    date_joined=db.Column(db.DateTime,default=datetime.utcnow)
-    date_left_on=db.Column(db.DateTime,default=datetime.utcnow)
+    date_joined=db.Column(db.Datetime,default=datetime.utcnow)
+    date_left_on=db.Column(db.Datetime,default=datetime.utcnow)
+
+
 
 
 class ContactUs(db.Model):
