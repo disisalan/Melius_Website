@@ -5,10 +5,9 @@ from datetime import datetime
 
 
 
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db' 
 
-db = SQLAlchemy(app)
+
+db = SQLAlchemy()
 
 class BlogPost(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -29,7 +28,7 @@ class BlogPost(db.Model):
  # - is_active
  # - date_joined
  # - date_left_on
-class Member(db.model):
+class Member(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     name=db.Column(db.String(100),nullable=False)
     image=db.Column(db.String(255),nullable=False)
@@ -39,6 +38,16 @@ class Member(db.model):
     is_active=db.Column(db.Boolean,default=False)
     date_joined=db.Column(db.Datetime,default=datetime.utcnow)
     date_left_on=db.Column(db.Datetime,default=datetime.utcnow)
+
+
+
+
+class ContactUs(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
+    email = db.Column(db.String(255),nullable=False)
+    description = db.Column(db.Text, nullable=False)
+    created_on = db.Column(db.DateTime, default=datetime.utcnow)
 
 
     
