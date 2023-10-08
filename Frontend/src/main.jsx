@@ -9,6 +9,7 @@ import Services from "./Components/Services";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
+      <Navbar/>
       <Home />
       <Services />
       <About />
