@@ -8,7 +8,7 @@ export default function Info() {
                 <div>
                     {/* Heading */}
                     <div className="flex justify-between items-center gap-3 md:gap-5">
-                        <h1 className="font-bold text-4xl w-max md:text-4xl lg:text-5xl xl:text-6xl">What do Consultants DO?</h1>
+                        <h1 className="font-bold py-2 text-4xl w-max md:text-4xl lg:text-5xl xl:text-6xl">What do Consultants DO?</h1>
                         <div className="md:h-px md:bg-white md:flex-grow"></div>
                     </div>
 
@@ -17,7 +17,7 @@ export default function Info() {
 
                     {/* Read more button */}
                     <div className="flex my-5">
-                        <button className="bg-blue rounded-full py-3 px-8 font-semibold md:mx-auto md:text-2xl">Read More</button>
+                        <button className="bg-blue rounded-full py-3 px-5 font-semibold mx-auto md:text-2xl">Read More</button>
                     </div>
                 </div>
 
