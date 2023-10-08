@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        black: "#0a0a0a",
+        grey: "#36322D",
+        blue: "#264af9",
+        pink: "#ee6373"
+      },
+
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }

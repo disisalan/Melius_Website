@@ -2,8 +2,6 @@ from flask import Blueprint , request , jsonify
 from .models import db, BlogPost,Member,ContactUs
 admin_bp = Blueprint('admin', __name__)
 
-# ----------------------------------------------------------Contact-Us-----------------------------------------
-
 @admin_bp.route('contactus/',methods=['GET','POST'])
 def contactus():
     if request.method=='GET':
@@ -27,7 +25,17 @@ def contactus():
         db.session.add(new_instance)
         db.session.commit()
         return jsonify({'msg':'success'}),200
-    
+
+@admin_bp.route('members/')
+def members():
+    # if get request then do something
+    # if post request then do something
+    # if put request then do something
+    # if delete request then do something
+    return 'Welcome to Admin!'
+
+
+   
 # ----------------------------------------------------------Created a new blog post--------------------------------------------
 
 @admin_bp.route('/blog_posts', methods=['POST'])
@@ -99,9 +107,3 @@ def delete_blog_post(post_id):
     db.session.delete(post)
     db.session.commit()
     return jsonify({"message": "Blog post deleted successfully!"})
-
-# ------------------------------------Calling to Main-----------------------------------------------------------
-
-if __name__ == '__main__':
-    db.create_all()
-    admin_bp.run(debug=True)
