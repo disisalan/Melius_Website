@@ -45,34 +45,34 @@ export default function About() {
 
                         {/* mission 1 */}
                         <div className="mx-auto my-3 lg:my-10">
-                            <img src="../../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto" />
+                            <img src="../../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">
-                                <h1 className="font-bold text-2xl md:text-4xl">Lorem Ipsum</h1>
-                                <p className="font-light md:text-2xl lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, atque ex. Nulla, tempora corporis dolor non sunt quas est eveniet et, quisquam omnis error quaerat in nobis blanditiis, illum soluta? </p>
+                                <h1 className="font-bold text-xl md:text-4xl">Lorem Ipsum</h1>
+                                <p className="text-xs font-light md:text-2xl lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, atque ex. Nulla, tempora corporis dolor non sunt quas est eveniet et, quisquam omnis error quaerat in nobis blanditiis, illum soluta? </p>
                             </div>
                         </div>
 
                         {/* mission 2 */}
                         <div className="mx-auto my-3 lg:my-10">
-                            <img src="../../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto" />
+                            <img src="../../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">
-                                <h1 className="font-bold text-2xl md:text-4xl">Lorem Ipsum</h1>
-                                <p className="font-light md:text-2xl lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, atque ex. Nulla, tempora corporis dolor non sunt quas est eveniet et, quisquam omnis error quaerat in nobis blanditiis, illum soluta? </p>
+                                <h1 className="font-bold text-xl md:text-4xl">Lorem Ipsum</h1>
+                                <p className="text-xs font-light md:text-2xl lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, atque ex. Nulla, tempora corporis dolor non sunt quas est eveniet et, quisquam omnis error quaerat in nobis blanditiis, illum soluta? </p>
                             </div>
                         </div>
 
                         {/* mission 3 */}
                         <div className="mx-auto my-3q lg:my-10">
-                            <img src="../../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto" />
+                            <img src="../../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">
-                                <h1 className="font-bold text-2xl md:text-4xl">Lorem Ipsum</h1>
-                                <p className="font-light md:text-2xl lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, atque ex. Nulla, tempora corporis dolor non sunt quas est eveniet et, quisquam omnis error quaerat in nobis blanditiis, illum soluta? </p>
+                                <h1 className="font-bold text-xl md:text-4xl">Lorem Ipsum</h1>
+                                <p className="text-xs font-light md:text-2xl lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, atque ex. Nulla, tempora corporis dolor non sunt quas est eveniet et, quisquam omnis error quaerat in nobis blanditiis, illum soluta? </p>
                             </div>
                         </div>
 
