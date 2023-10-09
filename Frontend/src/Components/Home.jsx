@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <div className="bg-black flex justify-between items-center p-4 md:p-12">
+      <div className=" flex justify-between items-center px-4 py-10 md:p-12">
         <div id="info">
           <h1 className="p-2 font-poppins text-3xl leading-[3rem] font-bold text-white md:p-8 md:text-6xl md:leading-[4.5rem] ">Empowering Success <br></br>through<br></br> Expert Guidance</h1>
           <p className="p-2 font-inter font-light text-white text-md w-[25ch] md:text-xl md:px-8 md:w-[35ch]">

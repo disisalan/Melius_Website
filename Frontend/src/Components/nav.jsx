@@ -75,7 +75,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="bg-black flex justify-between items-center px-6 py-12 md:px-24">
+      <div className=" flex justify-between items-center px-6 py-12 md:px-24">
         <div>
           <img
             src="../../Media/logo_black_bg-removebg-preview.png"
@@ -107,10 +107,10 @@ export default function Navbar() {
           ref={mobileMenuRef} // Ref for the mobile menu container
         >
           {/* Mobile menu button */}
-          <div id="menu" className="flex flex-col gap-2">
-            <div className="w-12 h-[2px] bg-white"></div>
-            <div className="w-12 h-[2px] bg-white"></div>
-            <div className="w-12 h-[2px] bg-white"></div>
+          <div id="menu" className="bg-black flex flex-col gap-2 p-4 rounded-full">
+            <div className="w-5 h-[1px] bg-white"></div>
+            <div className="w-5 h-[1px] bg-white"></div>
+            <div className="w-5 h-[1px] bg-white"></div>
           </div>
           <div
             className={
