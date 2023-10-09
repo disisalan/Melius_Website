@@ -115,15 +115,15 @@ export default function Navbar() {
           <div
             className={
               nav
-                ? 'fixed bg-slate-600 right-0 top-0 h-[150%] w-[60%]  flex flex-col items-center ease-in-out duration-500'
-                : 'fixed right-[-100%]'
+                ? 'fixed bg-slate-600 right-0 top-0 h-[150%] w-[60%]  flex justify-center ease-in duration-300'
+                : 'fixed right-[-100%] top-0 h-full w-[60%]  flex justify-center ease-in duration-300'
             }
           >
-            <div id="menu" className="flex flex-col gap-2 pt-12 pl-36">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABPklEQVR4nO2YS07DMBRFvRwYdAtAO+A7ohSYAcNSShmyZBYApRW/gyIaKUrsyBAn2NE949i5R5aT954xQgghhBAiOoABcBlwvxEwDLWf70u3gSfgA7gOsN8O8AwsO5MpSOR8NpEBdoGXwn5LYC9savuLLzYnQVMZYB94Le31BczbSW+XebcEmAaQeGg3fTXIuUPm1mPtAbCyrF10k74aaAK8WQLNatYcRiXxF5loJXKAM4fMXeGZI4fEvYkJ4ARYW4LOk5HIAU4dJ1N7WlECHFtOpnJKJgVwy6Qj0RsR7Jc+jUveq8sOjF2Bk/n84v4hzlL6q0+SL1H4kfhVBVxT+XZbvnuU8VPPXuT/ZbA3VlmXeNOwscp4bDd931pdYKs0fGg0SdlMULofPpRkMokrk+I4qFcDOiGEEEIIYXz4BtnffLYImZRxAAAAAElFTkSuQmCC"/>
-          </div>
+            <div id="menu" className="pt-12 ">
+            <img className="pl-20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABPklEQVR4nO2YS07DMBRFvRwYdAtAO+A7ohSYAcNSShmyZBYApRW/gyIaKUrsyBAn2NE949i5R5aT954xQgghhBAiOoABcBlwvxEwDLWf70u3gSfgA7gOsN8O8AwsO5MpSOR8NpEBdoGXwn5LYC9savuLLzYnQVMZYB94Le31BczbSW+XebcEmAaQeGg3fTXIuUPm1mPtAbCyrF10k74aaAK8WQLNatYcRiXxF5loJXKAM4fMXeGZI4fEvYkJ4ARYW4LOk5HIAU4dJ1N7WlECHFtOpnJKJgVwy6Qj0RsR7Jc+jUveq8sOjF2Bk/n84v4hzlL6q0+SL1H4kfhVBVxT+XZbvnuU8VPPXuT/ZbA3VlmXeNOwscp4bDd931pdYKs0fGg0SdlMULofPpRkMokrk+I4qFcDOiGEEEIIYXz4BtnffLYImZRxAAAAAElFTkSuQmCC"/>
+          
             {/* Mobile menu content */}            
-            <ul className="text-white font-poppins font-semibold pt-24 flex flex-col gap-6">
+            <ul className="text-white font-poppins font-semibold pt-16 flex flex-col gap-6">
               <a href="" className="pb-2 border-b-[1px]">
                 <li>About us</li>
               </a>
@@ -137,6 +137,7 @@ export default function Navbar() {
                 <li>Contact Us</li>
               </a>
             </ul>
+            </div>
           </div>
         </div>
       </div>
