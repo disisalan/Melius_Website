@@ -8,7 +8,7 @@ export default function About() {
                 <div className="flex flex-col justify-evenly gap-5 sm:gap-10 lg:flex-row my-10 lg:my-20">
                     {/* Image Parent Window */}
                     <div className="flex justify-center items-center">
-                        <img src="../../Media/bg-1.png" alt="" className="" />
+                        <img src="../Media/bg-1.png" alt="" className="" />
                     </div>
 
                     {/* Text Section for About Us */}
@@ -23,7 +23,7 @@ export default function About() {
                 <div className="flex flex-col justify-evenly gap-5 sm:gap-10 lg:flex-row-reverse my-10 lg:my-20">
                     {/* Image Parent Window */}
                     <div className="flex justify-center items-center">
-                        <img src="../../Media/bg-2.png" alt="" className="" />
+                        <img src="../Media/bg-2.png" alt="" className="" />
                     </div>
 
                     {/* Text Section for Our visions */}
@@ -45,7 +45,7 @@ export default function About() {
 
                         {/* mission 1 */}
                         <div className="mx-auto my-3 lg:my-10">
-                            <img src="../../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
+                            <img src="../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">
@@ -56,7 +56,7 @@ export default function About() {
 
                         {/* mission 2 */}
                         <div className="mx-auto my-3 lg:my-10">
-                            <img src="../../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
+                            <img src="../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">
@@ -67,7 +67,7 @@ export default function About() {
 
                         {/* mission 3 */}
                         <div className="mx-auto my-3q lg:my-10">
-                            <img src="../../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
+                            <img src="../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">

@@ -78,7 +78,7 @@ export default function Navbar() {
       <div className=" flex justify-between items-center px-6 py-12 md:px-24">
         <div>
           <img
-            src="../../Media/logo_black_bg-removebg-preview.png"
+            src="../Media/logo_black_bg-removebg-preview.png"
             alt=""
             className="w-40 lg:w-48:py-2 "
           />

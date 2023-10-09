@@ -30,21 +30,21 @@ export default function Info() {
                     </div>
 
                     <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-10 2xl:gap-12">
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
-                        <img src="../../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
+                        <img src="../Media/SBICARD.NS_BIG.png" alt="" className="" />
                     </div>
                 </div>
             </div>

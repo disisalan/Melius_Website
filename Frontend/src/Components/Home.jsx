@@ -9,7 +9,7 @@ export default function Home() {
           </p>
           <div className="mt-5 p-2 md:text-xl md:px-8">
             <button href="" className="px-4 py-2 flex items-center gap-2 bg-slate-600 rounded-[50px] font-inter font-bold  text-white md:px-5 md:py-1">Get in touch
-            <img src="../../Media/arrow-right.png" alt="" className=" w-12 md:w-16"/></button>
+            <img src="../Media/arrow-right.png" alt="" className=" w-12 md:w-16"/></button>
           </div>
           <div id="social-mob" className="px-3 gap-2 flex items-center [&>svg]:w-9  fill-white  md:hidden">
             <svg
