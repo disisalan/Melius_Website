@@ -92,7 +92,6 @@ def members():
 
         # ----------------------------------------------------------Created a Project--------------------------------------------
 
-
 @admin_bp.route('project/', methods=['GET', 'POST', 'PUT', 'DELETE'])
 def project():
     if request.method == 'GET':
