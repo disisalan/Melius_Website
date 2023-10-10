@@ -6,6 +6,7 @@ import Info from "./Components/Info";
 import About from "./Components/About";
 import Services from "./Components/Services";
 import Team from "./Components/Team";
+import Contact from "./Components/Contact";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -14,5 +15,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <About />
       <Info />
       <Team />
+      <Contact/>
     </React.StrictMode>
 );
