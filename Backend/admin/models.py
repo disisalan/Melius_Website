@@ -32,3 +32,14 @@ class ContactUs(db.Model):
     email = db.Column(db.String(255),nullable=False)
     description = db.Column(db.Text, nullable=False)
     created_on = db.Column(db.DateTime, default=datetime.utcnow)
+
+class Project(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
+    partner = db.Column(db.String(255))
+    brief = db.Column(db.Text)
+    pdf_link = db.Column(db.String(255),nullable=False)
+    date = db.Column(db.Date,)
+    photo = db.Column(db.String(255))
+    instagram_link = db.Column(db.String(255))
+    linkedin_link = db.Column(db.String(255))
