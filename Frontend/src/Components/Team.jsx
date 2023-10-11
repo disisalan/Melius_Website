@@ -1,12 +1,13 @@
 export default function Team() {
     return (
-        <div className="bg-pink font-inter lg:px-24 text-white">
-            <h1 className="py-5 font-poppins lg:text-5xl font-bold border-b-4 border-blue">Meet the team</h1>
+        <div className="bg-black font-inter px-6 lg:px-24 text-white">
+            <h1 className="py-5 font-poppins text-3xl lg:text-5xl font-bold border-b-4 border-blue">Meet the team</h1>
 
-            <div className="py-10 flex flex-wrap gap-28 justify-center">
-                {/* person */}
-                <div className="relative bg-contain bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-56 h-72">
-                    <div className="absolute top-[30%] right-[-35%] font-bold font-poppins text-2xl">
+            {/* core team, 3:4 image recommended*/}
+            <div className="py-10 flex flex-wrap gap-10 md:gap-16 lg:gap-28 justify-center">
+                {/* core member */}
+                <div className="relative bg-contain bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
+                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
                         <div>Palash</div>
                         <div className="text-blue">President</div>
                         <div>
@@ -15,9 +16,8 @@ export default function Team() {
                         </div>
                     </div>
                 </div>
-                {/* person */}
-                <div className="relative bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-56 h-72">
-                    <div className="absolute top-[30%] right-[-35%] font-bold font-poppins text-2xl">
+                <div className="relative bg-contain bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
+                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
                         <div>Palash</div>
                         <div className="text-blue">President</div>
                         <div>
@@ -26,9 +26,8 @@ export default function Team() {
                         </div>
                     </div>
                 </div>
-                {/* person */}
-                <div className="relative bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-56 h-72">
-                    <div className="absolute top-[30%] right-[-35%] font-bold font-poppins text-2xl">
+                <div className="relative bg-contain bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
+                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
                         <div>Palash</div>
                         <div className="text-blue">President</div>
                         <div>
@@ -37,9 +36,8 @@ export default function Team() {
                         </div>
                     </div>
                 </div>
-                {/* person */}
-                <div className="relative bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-56 h-72">
-                    <div className="absolute top-[30%] right-[-35%] font-bold font-poppins text-2xl">
+                <div className="relative bg-contain bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
+                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
                         <div>Palash</div>
                         <div className="text-blue">President</div>
                         <div>
@@ -48,9 +46,8 @@ export default function Team() {
                         </div>
                     </div>
                 </div>
-                {/* person */}
-                <div className="relative bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-56 h-72">
-                    <div className="absolute top-[30%] right-[-35%] font-bold font-poppins text-2xl">
+                <div className="relative bg-contain bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
+                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
                         <div>Palash</div>
                         <div className="text-blue">President</div>
                         <div>
@@ -59,6 +56,42 @@ export default function Team() {
                         </div>
                     </div>
                 </div>
+                <div className="relative bg-contain bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
+                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
+                        <div>Palash</div>
+                        <div className="text-blue">President</div>
+                        <div>
+                            {/* link */}
+                            {/* insta */}
+                        </div>
+                    </div>
+                </div>
+                <div className="relative bg-contain bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
+                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
+                        <div>Palash</div>
+                        <div className="text-blue">President</div>
+                        <div>
+                            {/* link */}
+                            {/* insta */}
+                        </div>
+                    </div>
+                </div>
+                <div className="relative bg-contain bg-[url('../Media/pexels-charlotte-may-5825604.jpg')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
+                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
+                        <div>Palash</div>
+                        <div className="text-blue">President</div>
+                        <div>
+                            {/* link */}
+                            {/* insta */}
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
             </div>
         </div>
     )

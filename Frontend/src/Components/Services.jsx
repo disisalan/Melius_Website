@@ -3,7 +3,7 @@ export default function Services() {
         <div className="flex py-5 bg-black text-white font-inter">
 
             {/* main */}
-            <div className="px-2 lg:px-12 mx-auto lg:flex flex-col gap-20 lg:flex-row lg:justify-center">
+            <div className="px-6 md:px-12 lg:px-24 lg:flex flex-col gap-20 lg:flex-row lg:justify-center">
 
                 {/* heading */}
                 <div className="flex flex-row gap-20 lg:justify-center lg:items-center lg:flex-col-reverse ">
