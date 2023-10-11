@@ -1,8 +1,8 @@
-from flask import Blueprint
-
+from flask import Blueprint , request , jsonify
+from admin.models import *
 routes_bp = Blueprint('routes', __name__)
 
-@routes_bp.route(('contactus/', methods=['GET', 'POST'])
+@routes_bp.route('contactus/', methods=['GET', 'POST'])
 def contactus():
     if request.method == 'GET':
         try:
@@ -17,7 +17,8 @@ def contactus():
                     'created_on': instance.created_on
                 })
             return jsonify(response), 200
-        except:
+        except Exception as e:
+            print(e)
             response = {"error": "an error occured"}
             return jsonify(response), 500
 
@@ -32,6 +33,6 @@ def contactus():
             db.session.add(new_instance)
             db.session.commit()
             return jsonify({'msg': 'success'}), 200
-         except:
+        except:
             response = {"error": "an error occured"}
             return jsonify(response), 500

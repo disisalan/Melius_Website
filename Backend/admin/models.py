@@ -17,7 +17,7 @@ class BlogPost(db.Model):
 class Member(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     name=db.Column(db.String(100),nullable=False)
-    image=db.Column(db.String(255),nullable=False)
+    image=db.Column(db.String(255),default="default.jpg")
     position=db.Column(db.String(100),nullable=False)
     order=db.Column(db.Integer,nullable=False)
     is_public=db.Column(db.Boolean,default=False)
