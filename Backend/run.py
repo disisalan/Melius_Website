@@ -8,7 +8,7 @@ from flask_migrate import Migrate
 app = Flask(__name__)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db' 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///sqlite.db' 
 
 admin_db.init_app(app)
 migrate = Migrate(app, admin_db)
