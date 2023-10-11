@@ -1,6 +1,6 @@
 export default function Info() {
     return (
-        <div className="flex text-black bg-white font-inter">
+        <div className="flex text-white bg-black font-inter">
             {/* main */}
             <div className="mx-auto w-10/12 lg:w-3/4 flex flex-col gap-10 my-10">
 
@@ -26,23 +26,23 @@ export default function Info() {
                     {/* Heading */}
                     <div className="flex md:flex-row-reverse justify-between items-center gap-3 md:gap-5">
                         <h1 className="font-poppins font-bold text-4xl w-max md:text-4xl lg:text-5xl xl:text-6xl ">Past Experiences</h1>
-                        <div className="md:h-px md:bg-black md:flex-grow"></div>
+                        <div className="md:h-px md:bg-whtie md:flex-grow"></div>
                     </div>
 
-                    <div className="flex flex-wrap gap-10 justify-center items-center">
-                        <img src="../Media/experiences/CAPS-Logo-removebg-preview.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/ernst-young-ey-logo.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/Internshala_company_logo.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/kpmg-logo-1-removebg-preview.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/Lenskart-Logo.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/Marks_and_Spencer_Logo.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/Max_Life_Insurance_logo-removebg-preview.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/mazars-logo.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/MobiKwik-Logo.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/Natwest-Logo-removebg-preview.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/NITI-Aayog-logo-removebg-preview.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/SBI_card_logo-removebg-preview.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
-                        <img src="../Media/experiences/VISTARA-LOGO.png" alt="" className="w-[100px] md:w-[200px] lg:w-[300px] p-3 rounded-xl" />
+                    <div className="flex flex-wrap gap-4 justify-center lg:gap-10">
+                        <img src="../Media/experiences/CAPS-Logo-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/ernst-young-ey-logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/Internshala_company_logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/kpmg-logo-1-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/Lenskart-Logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/Marks_and_Spencer_Logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/Max_Life_Insurance_logo-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/mazars-logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/MobiKwik-Logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/Natwest-Logo-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/NITI-Aayog-logo-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/SBI_card_logo-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        {/* <img src="../Media/experiences/VISTARA-LOGO.png" alt="" className="bg-white w-[100px] px-1 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" /> */}
                     </div>
                 </div>
             </div>
