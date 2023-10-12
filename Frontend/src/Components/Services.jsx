@@ -1,6 +1,6 @@
 export default function Services() {
     return (
-        <div className="flex py-5 bg-black text-white font-inter">
+        <div className="flex py-5 bg-black text-white font-inter" id="services">
 
             {/* main */}
             <div className="px-6 md:px-12 lg:px-24 lg:flex flex-col gap-20 lg:flex-row lg:justify-center">

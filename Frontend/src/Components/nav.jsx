@@ -42,6 +42,7 @@
 
 
 import { useState, useEffect, useRef } from "react";
+import {Link} from "react-router-dom"
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -87,13 +88,17 @@ export default function Navbar() {
           {/* Desktop menu */}
           <ul className="text-white flex items-center gap-12 font-inter font-light">
             <a href="">
-              <li>About us</li>
+              <li>
+                <Link to="/about">About us</Link>
+              </li>
             </a>
-            <a href="">
+            <a href="#services">
               <li>Services</li>
             </a>
             <a href="">
-              <li>Projects</li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
             </a>
             <a href="" className="bg-grey py-2 px-4 rounded-lg">
               <li>Contact Us</li>
@@ -125,16 +130,16 @@ export default function Navbar() {
             {/* Mobile menu content */}            
             <ul className="text-white font-poppins font-semibold pt-16 flex flex-col gap-6">
               <a href="" className="pb-2 border-b-[1px]">
-                <li>About us</li>
+                <li><Link to="/about">About us</Link></li>
               </a>
-              <a href="" className="pb-2 border-b-[1px]">
+              <a href="#services" className="pb-2 border-b-[1px]">
                 <li>Services</li>
               </a>
               <a href="" className="pb-2 border-b-[1px]">
-                <li>Projects</li>
+                <li><Link to="/projects">Projects</Link></li>
               </a>
               <a href="" className="pb-2 border-b-[1px]">
-                <li>Contact Us</li>
+                <li><Link to="/contact">Contact us</Link></li>
               </a>
             </ul>
             </div>
