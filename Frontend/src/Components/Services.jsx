@@ -21,23 +21,23 @@ export default function Services() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 lg:w-3/5 py-3">
                     {/* Research 1 */}
                     <div className="flex flex-col p-5 md:gap-2 lg:gap-5 bg-grey/20 rounded-md">
-                        <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl font-poppins xl:text-5xl">Research</h1>
-                        <p className="font-light text-sm md:text-xl md:text-white lg:text-xl xl:text-2xl">The research will be conducted together with you to ensure that broad industry characterstics are blah blah blah</p>
+                        <h1 className="font-bold text-2xl md:text-3xl font-poppins">Research</h1>
+                        <p className="font-light text-sm md:text-xl md:text-white">The research will be conducted together with you to ensure that broad industry characterstics are blah blah blah</p>
                     </div>
                     {/* Research 1 */}
                     <div className="flex flex-col p-5 md:gap-2 lg:gap-5 bg-grey/20 rounded-md">
-                        <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl font-poppins xl:text-5xl">Research</h1>
-                        <p className="font-light text-sm md:text-xl md:text-white lg:text-xl xl:text-2xl">The research will be conducted together with you to ensure that broad industry characterstics are blah blah blah</p>
+                        <h1 className="font-bold text-2xl md:text-3xl font-poppins">Research</h1>
+                        <p className="font-light text-sm md:text-xl md:text-white">The research will be conducted together with you to ensure that broad industry characterstics are blah blah blah</p>
                     </div>
                     {/* Research 1 */}
                     <div className="flex flex-col p-5 md:gap-2 lg:gap-5 bg-grey/20 rounded-md">
-                        <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl font-poppins xl:text-5xl">Research</h1>
-                        <p className="font-light text-sm md:text-xl md:text-white lg:text-xl xl:text-2xl">The research will be conducted together with you to ensure that broad industry characterstics are blah blah blah</p>
+                        <h1 className="font-bold text-2xl md:text-3xl font-poppins">Research</h1>
+                        <p className="font-light text-sm md:text-xl md:text-white">The research will be conducted together with you to ensure that broad industry characterstics are blah blah blah</p>
                     </div>
                     {/* Research 1 */}
                     <div className="flex flex-col p-5 md:gap-2 lg:gap-5 bg-grey/20 rounded-md">
-                        <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl font-poppins xl:text-5xl">Research</h1>
-                        <p className="font-light text-sm md:text-xl md:text-white lg:text-xl xl:text-2xl">The research will be conducted together with you to ensure that broad industry characterstics are blah blah blah</p>
+                        <h1 className="font-bold text-2xl md:text-3xl font-poppins">Research</h1>
+                        <p className="font-light text-sm md:text-xl md:text-white">The research will be conducted together with you to ensure that broad industry characterstics are blah blah blah</p>
                     </div>
                 </div>
             </div>

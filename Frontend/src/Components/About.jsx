@@ -14,8 +14,8 @@ export default function About() {
                     {/* Text Section for About Us */}
                     <div className="text-gray flex flex-col w-full gap-2 sm:gap-5 lg:gap-3 xl:gap-4">
                         <h1 className="text-4xl sm:text-6xl sm:pb-2 md:text-5xl lg:text-6xl xl:mb-5 font-bold border-b-4 border-blue pb-1 w-max">About Us</h1>
-                        <p className="text-base font-light sm:text-2xl md:text-2xl lg:text-2xl">Melius- The Consulting & Analytics Club at Maharaja Surajmal Institute, affiliated with GGSIPU University, is a student-led consulting club.</p>
-                        <p className="text-base font-light sm:text-2xl md:text-2xl lg:text-2xl">We're driven by professionalism, delivering value and shaping future consultants. With an inclusive approach, we nurture analytical skills through live projects, case studies, and industry lectures.</p>
+                        <p className="text-base font-light md:text-xl">Melius- The Consulting & Analytics Club at Maharaja Surajmal Institute, affiliated with GGSIPU University, is a student-led consulting club.</p>
+                        <p className="text-base font-light md:text-xl">We're driven by professionalism, delivering value and shaping future consultants. With an inclusive approach, we nurture analytical skills through live projects, case studies, and industry lectures.</p>
                     </div>
                 </div>
 
@@ -29,7 +29,7 @@ export default function About() {
                     {/* Text Section for Our visions */}
                     <div className="text-gray flex flex-col w-full gap-2 sm:gap-5 lg:gap-3 xl:gap-4">
                         <h1 className="text-4xl sm:text-6xl sm:pb-2 md:text-5xl lg:text-6xl xl:mb-5 font-bold border-b-4 border-blue pb-1 w-max">Our Vision</h1>
-                        <p className="text-base font-light sm:text-2xl md:text-2xl lg:text-2xl">Our Vision encompasses student-led initiatives that drive positive change within our college community and beyond, demonstrating the potential of young age professionals to make a meaningful impact through consulting. We aim to be a preferred student consultancy and strategic partner to coporates & NPOs by 2026.</p>
+                        <p className="text-base font-light md:text-xl">Our Vision encompasses student-led initiatives that drive positive change within our college community and beyond, demonstrating the potential of young age professionals to make a meaningful impact through consulting. We aim to be a preferred student consultancy and strategic partner to coporates & NPOs by 2026.</p>
 
                     </div>
                 </div>
