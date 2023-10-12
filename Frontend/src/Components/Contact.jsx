@@ -24,7 +24,7 @@ export default function Contact() {
       });
   };
   return (
-    <div className="bg-black font-inter px-6  lg:px-24 text-white">
+    <div className="bg-black font-inter px-6 pt-20  lg:px-24  text-white">
       <h1 className="py-5   text-3xl font-poppins lg:text-5xl font-bold border-b-4 border-blue">
         Contact Us
       </h1>

@@ -1,17 +1,20 @@
+import { Link } from "react-router-dom";
+
+
 export default function Home() {
   return (
     <>
-      <div className=" flex justify-between items-center px-4 py-10 md:py-6 md:mx-12">
-        <div id="info">
+      <div className=" flex justify-between items-center px-4 pb-10 pt-24  md:pt-24 md:mx-12">
+        <div id="info" className=" py-14 lg:py-10">
           <h1 className="p-2 font-poppins text-3xl leading-[3rem] font-bold text-white md:p-8 md:text-6xl md:leading-[4.5rem] ">Empowering Success <br></br>through<br></br> Expert Guidance</h1>
           <p className="p-2 font-inter font-light text-white text-md w-[25ch] md:text-xl md:px-8 md:w-[35ch]">
             Fueling success through <br />insightful strategies and bold innovations
           </p>
           <div className="mt-5 p-2 md:text-xl md:px-8">
-            <button href="" className="px-4 py-2 flex items-center gap-2 bg-slate-600 rounded-[50px] font-inter font-bold  text-white md:px-5 md:py-1">Get in touch
-            <img src="../Media/arrow-right.png" alt="" className=" w-12 md:w-16"/></button>
+          <Link to="/contact"><button href="" className="px-4 py-2 flex items-center gap-2 bg-slate-600 rounded-[50px] font-inter font-bold  text-white md:px-5 md:py-1">Get in touch
+           <img src="../Media/arrow-right.png" alt="" className="animate-pulse w-12 md:w-16"/></button></Link>
           </div>
-          <div id="social-mob" className="px-3 gap-2 flex items-center [&>svg]:w-9  fill-white  md:hidden">
+          <div id="social-mob" className="px-3 gap-2 flex items-center [&>svg]:w-9  fill-black  md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
