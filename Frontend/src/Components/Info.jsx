@@ -9,7 +9,7 @@ export default function Info() {
                     {/* Heading */}
                     <div className="flex justify-between items-center gap-3 md:gap-5">
                         <h1 className="font-poppins font-bold py-2 text-4xl w-max md:text-4xl lg:text-5xl xl:text-6xl">What do Consultants DO?</h1>
-                        <div className="md:h-px md:bg-black md:flex-grow"></div>
+                        <div className="md:h-px md:bg-white md:flex-grow"></div>
                     </div>
 
                     {/* Description */} 
@@ -26,7 +26,7 @@ export default function Info() {
                     {/* Heading */}
                     <div className="flex md:flex-row-reverse justify-between items-center gap-3 md:gap-5">
                         <h1 className="font-poppins font-bold text-4xl w-max md:text-4xl lg:text-5xl xl:text-6xl ">Past Experiences</h1>
-                        <div className="md:h-px md:bg-whtie md:flex-grow"></div>
+                        <div className="md:h-px md:bg-white md:flex-grow"></div>
                     </div>
 
                     <div className="flex flex-wrap gap-4 justify-center lg:gap-10">
