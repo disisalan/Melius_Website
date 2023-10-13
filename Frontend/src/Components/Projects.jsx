@@ -6,7 +6,7 @@ function Projects() {
       <h1 className="py-5 font-poppins text-3xl lg:text-5xl font-bold border-b-4 border-blue">Events</h1>
 
       {/* Projects Container */}
-      <div className="py-5 md:py-10 overflow-x-auto text-xs md:text-2xl flex flex-nowrap gap-5 md:gap-10">
+      <div className="py-5 md:py-10 text-xs md:text-2xl flex flex-wrap justify-center gap-5 md:gap-10">
 
         {/* Project */}
         <div className="p-3 md:p-5 relative bg-grey/25 rounded-xl bg-contain w-[200px] h-[266px] md:w-[400px] md:h-[533px] flex-none">
