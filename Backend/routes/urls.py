@@ -1,28 +1,10 @@
 from flask import Blueprint , request , jsonify
-from admin.models import *
+from admin.models import ContactUs,db
 routes_bp = Blueprint('routes', __name__)
 
 @routes_bp.route('contactus/', methods=['GET', 'POST'])
 def contactus():
-    if request.method == 'GET':
-        try:
-            all_instances = ContactUs.query.all()
-            response = []
-            for instance in all_instances:
-                response.append({
-                    'id': instance.id,
-                    'name': instance.name,
-                    'description': instance.description,
-                    'email': instance.email,
-                    'created_on': instance.created_on
-                })
-            return jsonify(response), 200
-        except Exception as e:
-            print(e)
-            response = {"error": "an error occured"}
-            return jsonify(response), 500
-
-    elif request.method == 'POST':
+    if request.method == 'POST':
         try:
             request_data = request.get_json()
             name = request_data['name']

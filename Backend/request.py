@@ -4,11 +4,11 @@ import os
 url = 'http://127.0.0.1:5000/api/admin/members'
 
 files = {
-        "image": open('OIP.jfif', 'rb'),
+        "image": open('naman.jpg', 'rb'),
 }
 data = {
-    "name": "John_Doe",
-    "position": "Software Engineer",
+    "name": "Naman Sethi",
+    "position": "Core",
     "order": 1,
     "is_public": True,
     "is_active": True

@@ -12,7 +12,7 @@ class BlogPost(db.Model):
     image2 = db.Column(db.String(255))
     description = db.Column(db.Text, nullable=False)
     created_on = db.Column(db.DateTime, default=datetime.utcnow)
-    is_public = db.Column(db.Boolean, default=True)
+    is_public = db.Column(db.Boolean, default=False)
 
 class Member(db.Model):
     id=db.Column(db.Integer,primary_key=True)
@@ -22,8 +22,7 @@ class Member(db.Model):
     order=db.Column(db.Integer,nullable=False)
     is_public=db.Column(db.Boolean,default=False)
     is_active=db.Column(db.Boolean,default=False)
-    date_joined=db.Column(db.DateTime,default=datetime.utcnow)
-    date_left_on=db.Column(db.DateTime,default=datetime.utcnow)
+    is_core = db.Column(db.Boolean,default=False)
 
 
 class ContactUs(db.Model):
@@ -43,3 +42,4 @@ class Project(db.Model):
     photo = db.Column(db.String(255))
     instagram_link = db.Column(db.String(255))
     linkedin_link = db.Column(db.String(255))
+    is_public = db.Column(db.Boolean, default=False)

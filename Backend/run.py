@@ -13,9 +13,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///sqlite.db'
 admin_db.init_app(app)
 migrate = Migrate(app, admin_db)
 
-app.register_blueprint(routes_bp , url_prefix="/")
+app.register_blueprint(routes_bp , url_prefix="/api/")
 app.register_blueprint(admin_bp , url_prefix="/api/admin/")
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+#serve static folder
