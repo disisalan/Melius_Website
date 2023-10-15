@@ -98,7 +98,7 @@ export default function Navbar() {
           <div>
             <Link to="/">
             <img
-              src="../Media/logo_black_bg-removebg-preview.png"
+              src="../Media/logo_black_bg-removebg-preview.png?"
               alt=""
               className="w-44 lg:w-48 :py-2 "
             /></Link>
