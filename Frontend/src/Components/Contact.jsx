@@ -1,28 +1,9 @@
 import axios from "axios";
 export default function Contact() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = async (event) => {
 
-    // Create an object to store the form data
-    const formData = {
-      Name: event.target.Name.value,
-      Contact: event.target.Contact.value,
-      Email: event.target.Email.value,
-      Subject: event.target.Subject.value,
-      Message: event.target.Message.value,
-    };
-    console.log(formData)
-    // Send the form data to the specified URL as JSON
-    axios.post("https://script.google.com/macros/s/AKfycbyerLLRhejhy2-ELCzVTjzUuYvP76FU925zbXuCGdfHmNXm_15824cPjLmuuB-LA0TuZw/exec", formData)
-      .then((response) => {
-        // Handle success, if needed
-        console.log("Form data submitted successfully:", response);
-      })
-      .catch((error) => {
-        // Handle errors, if needed
-        console.error("Error submitting form data:", error);
-      });
   };
+
   return (
     <div className="bg-black font-inter px-6 pt-20  lg:px-24  text-white">
       <h1 className="py-5   text-3xl font-poppins lg:text-5xl font-bold border-b-4 border-blue">

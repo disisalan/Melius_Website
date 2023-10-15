@@ -37,37 +37,7 @@ export default function Team() {
                     </div>
                 </div>
                 <div className="relative bg-contain bg-[url('../Media/bg-2.png')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
-                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
-                        <div>Palash</div>
-                        <div className="text-blue">President</div>
-                        <div>
-                            {/* link */}
-                            {/* insta */}
-                        </div>
-                    </div>
-                </div>
-                <div className="relative bg-contain bg-[url('../Media/bg-2.png')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
-                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
-                        <div>Palash</div>
-                        <div className="text-blue">President</div>
-                        <div>
-                            {/* link */}
-                            {/* insta */}
-                        </div>
-                    </div>
-                </div>
-                <div className="relative bg-contain bg-[url('../Media/bg-2.png')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
-                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
-                        <div>Palash</div>
-                        <div className="text-blue">President</div>
-                        <div>
-                            {/* link */}
-                            {/* insta */}
-                        </div>
-                    </div>
-                </div>
-                <div className="relative bg-contain bg-[url('../Media/bg-2.png')] w-[200px] h-[266.67px] sm:w-[250px] sm:h-[333px] lg:w-[300px] lg:h-[400px]">
-                    <div className="absolute top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
+                    <div className="absolute  top-[30%] right-[-15%] lg:top-[30%] lg:right-[-30%] font-bold font-poppins text-2xl lg:text-4xl">
                         <div>Palash</div>
                         <div className="text-blue">President</div>
                         <div>
