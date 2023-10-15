@@ -1,12 +1,23 @@
-from flask import Blueprint, request, jsonify
-from .models import db, BlogPost, Member, ContactUs, Project
+from flask import Blueprint, request, jsonify , Flask
+from .models import db, BlogPost, Member, ContactUs, Project , Admin
 import uuid
 import os
 from PIL import Image
 from datetime import datetime
-admin_bp = Blueprint('admin', __name__)
+from flask_httpauth import HTTPBasicAuth
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_mail import Message
 
-@admin_bp.route('contactus/', methods=['GET', 'POST'])
+admin_bp = Blueprint('admin', __name__)
+auth = HTTPBasicAuth()
+app = Flask(__name__)
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USERNAME'] = "meliuswebsite@gmail.com"
+app.config['MAIL_PASSWORD'] = ''
+app.config['MAIL_USE_TLS'] = True
+@admin_bp.route('contactus/', methods=['GET'])
+@auth.login_required
 def contactus():
     if request.method == 'GET':
         try:
@@ -25,9 +36,10 @@ def contactus():
             print(e)
             response = {"error": "an error occured"}
             return jsonify(response), 500
-
-@admin_bp.route('members/', methods=['GET', 'POST', 'PUT', 'DELETE'])
-def members():
+#get route for members
+@admin_bp.route('members/', methods=['GET'])
+@auth.login_required
+def get_members():
     if request.method == 'GET':
         try:
             # Read operation - Fetch members from the database
@@ -43,15 +55,22 @@ def members():
                     "order": member.order,
                     "is_public": member.is_public,
                     "is_active": member.is_active,
-                    "is_core": member.is_core
+                    "is_core": member.is_core,
+                    "instagram": member.instagram_link,
+                    "linkedin": member.linkedin_link,
+                    "course": member.course
                 })
             return jsonify(members_list)
         except Exception as e:
             print(e)
-            return jsonify({"error":"something went wrong"})
+            return jsonify({"error":"something went wrong"}),400
 
 
-    elif request.method == 'PUT':
+@admin_bp.route('members/', methods=['POST', 'PUT', 'DELETE'])
+@auth.login_required
+def members():
+
+    if request.method == 'PUT':
         try:
             # Update operation - Update an existing member
             id = request.args.get("id")
@@ -79,6 +98,9 @@ def members():
             member.is_public = bool(request.form["is_public"]) if "is_public" in request.form.keys() else member.is_public
             member.is_active = bool(request.form["is_active"]) if "is_active" in request.form.keys() else member.is_active
             member.is_core = bool(request.form["is_core"]) if "is_core" in request.form.keys() else member.is_core
+            member.instagram_link = request.form["instagram"] if "instagram" in request.form.keys() else member.instagram_link
+            member.linkedin_link = request.form["linkedin"] if "linkedin" in request.form.keys() else member.linkedin_link
+            member.course = request.form["course"] if "course" in request.form.keys() else member.course
             # You can also update date_joined and date_left_on if needed
 
             db.session.commit()
@@ -93,6 +115,9 @@ def members():
             name = request.form["name"]
             image = request.files['image']
             position = request.form["position"]
+            insgram_link = request.form["instagram"]
+            linkedin_link = request.form["linkedin"]
+            course = request.form["course"]
             order = request.form["order"]
             if "is_public" in request.form.keys():
                 is_public = bool(request.form["is_public"])
@@ -124,7 +149,7 @@ def members():
             img.save(f"profile_pictures/{file_name}")
             # Create a new Member object and add it to the database
             new_member = Member(name=name, image=file_name, position=position, order=order,
-                                is_public=is_public, is_active=is_active , is_core=is_core)
+                                is_public=is_public, is_active=is_active , is_core=is_core,instagram_link=insgram_link,linkedin_link=linkedin_link,course=course)
             db.session.add(new_member)
             db.session.commit()
             return jsonify("Member created successfully")
@@ -145,30 +170,38 @@ def members():
             return jsonify({"error":"something went wrong"}),200
 
         # ----------------------------------------------------------Created a Project--------------------------------------------
-
-@admin_bp.route('project/', methods=['GET', 'POST', 'PUT', 'DELETE'])
-def project():
+# get route for projects
+@admin_bp.route('project/', methods=['GET'])
+@auth.login_required
+def get_projects():
     if request.method == 'GET':
         try:
-            project = Project.query.all()
+            # Read operation - Fetch members from the database
+            projects = Project.query.all()
+            # Convert the members to a list of dictionaries for JSON response
             project_list = []
-            for p in project:
+            for project in projects:
                 project_list.append({
-                    "id": p.id,
-                    "name": p.name,
-                    "partner": p.partner,
-                    "brief": p.brief,
-                    "pdf_link": p.pdf_link,
-                    "date": p.date.strftime('%Y-%m-%d') if p.date else None,
-                    "photo": p.photo,
-                    "instagram": p.instagram_link,
-                    "linkedin": p.linkedin_link
+                    "id": project.id,
+                    "name": project.name,
+                    "partner": project.partner,
+                    "brief": project.brief,
+                    "pdf_link": project.pdf_link,
+                    "date": project.date.strftime('%Y-%m-%d') if project.date else None,
+                    "photo": project.photo,
+                    "instagram": project.instagram_link,
+                    "linkedin": project.linkedin_link,
+                    "is_public": project.is_public
                 })
             return jsonify(project_list)
         except Exception as e:
             print(e)
-            return jsonify({"error":"something went wrong"}),200
-    elif request.method == 'PUT':
+            return jsonify({"error":"something went wrong"}),400
+
+@admin_bp.route('project/', methods=[ 'POST', 'PUT', 'DELETE'])
+@auth.login_required
+def project():
+    if request.method == 'PUT':
         try:
             id = request.args.get("id")
             project = Project.query.get(id)
@@ -197,10 +230,10 @@ def project():
                 #delete old member image
                 os.remove(f"project_pictures/{project.photo}")
                 project.photo = file_name
-            project.instagram_link = request.form["instagram"] if "instagram" in request.form.keys() else project.instagram
-            project.linkedin_link = request.form["linkedin"] if "linkedin" in request.form.keys() else project.linkedin
+            project.instagram_link = request.form["instagram"] if "instagram" in request.form.keys() else project.instagram_link
+            project.linkedin_link = request.form["linkedin"] if "linkedin" in request.form.keys() else project.linkedin_link
             db.session.commit()
-            return jsonify("Member updated successfully")
+            return jsonify("Project updated successfully")
         except Exception as e:
             print(e)
             return jsonify({"error":"something went wrong"}),200
@@ -262,29 +295,12 @@ def project():
             return jsonify({"error":"something went wrong"}),200
 
 
-@admin_bp.route('project/<int:id>', methods=['GET'])
-def get_project(id):
-    try:
-        project = Project.query.get(id)
-        return jsonify({
-            "id": project.id,
-            "name": project.name,
-            "partner": project.partner,
-            "brief": project.brief,
-            "pdf_link": project.pdf_link,
-            "date": project.date.strftime('%Y-%m-%d') if project.date else None,
-            "photo": project.photo,
-            "instagram": project.instagram_link,
-            "linkedin": project.linkedin_link
-        })
-    except Exception as e:
-        print(e)
-        return jsonify({"error":"something went wrong"}),200
 
         # ----------------------------------------------------------Created a new blog post--------------------------------------------
 
 
 @admin_bp.route('/blog_posts', methods=['POST'])
+@auth.login_required
 def create_blog_post():
     try:
         title = request.form["title"]
@@ -299,6 +315,15 @@ def create_blog_post():
             image2 = None
         description = request.form["description"]
         is_public = bool(request.form["is_public"])
+        instagram_link = request.form["instagram_link"]
+        linkedin_link = request.form["linkedin_link"]
+        pdf_link = request.form["pdf_link"]
+        drive_link = request.form["drive_link"]
+        venue = request.form["venue"]
+        mode = request.form["mode"]
+        date = request.form["date"]
+        date = datetime.strptime(date, '%Y-%m-%d')
+        time = request.form["time"]
     except Exception as e:
         print(e)
         return jsonify({"error":"please provide all the feilds"}),200
@@ -357,6 +382,7 @@ def create_blog_post():
 # --------------------------------------------------------------------------------Get all blog posts------------------------------------------------------
 
 @admin_bp.route('/blog_posts', methods=['GET'])
+@auth.login_required
 def get_all_blog_posts():
     try:
         posts = BlogPost.query.all()
@@ -366,7 +392,17 @@ def get_all_blog_posts():
             "thumbnail": post.thumbnail,
             "description": post.description,
             "created_on": post.created_on,
-            "is_public": post.is_public}
+            "is_public": post.is_public,
+            "image1": post.image1,
+            "image2": post.image2,
+            "instagram_link": post.instagram_link,
+            "linkedin_link": post.linkedin_link,
+            "pdf_link": post.pdf_link,
+            "drive_link": post.drive_link,
+            "venue": post.venue,
+            "mode": post.mode,
+            "date": post.date.strftime('%Y-%m-%d') if post.date else None,
+            "time": post.time}
             for post in posts]
         return jsonify(blog_posts)
     except:
@@ -376,6 +412,7 @@ def get_all_blog_posts():
 
 
 @admin_bp.route('/blog_posts/<int:post_id>', methods=['PUT'])
+@auth.login_required
 def update_blog_post(post_id):
     post = BlogPost.query.get_or_404(post_id)
     # data = request.get_json()
@@ -428,8 +465,16 @@ def update_blog_post(post_id):
         #delete old member image
         os.remove(f"blog_pictures/{post.image2}")
         post.image2 = file_name
-    post.description = request.form["description"] if request.form.keys else post.description
-    post.is_public = bool(request.form["is_public"]) if request.form.keys else post.is_public
+    post.description = request.form["description"] if "description" in request.form.keys() else post.description
+    post.is_public = bool(request.form["is_public"]) if "is_public" in request.form.keys() else post.is_public
+    post.instagram_link = request.form["instagram_link"] if "instagram_link" in request.form.keys() else post.instagram_link
+    post.linkedin_link = request.form["linkedin_link"] if "linkedin_link" in request.form.keys() else post.linkedin_link
+    post.pdf_link = request.form["pdf_link"] if "pdf_link" in request.form.keys() else post.pdf_link
+    post.drive_link = request.form["drive_link"] if "drive_link" in request.form.keys() else post.drive_link
+    post.venue = request.form["venue"] if "venue" in request.form.keys() else post.venue
+    post.mode = request.form["mode"] if "mode" in request.form.keys() else post.mode
+    post.date = datetime.strptime(request.form["date"], '%Y-%m-%d' ) if "date" in request.form.keys() else post.date
+    post.time = request.form["time"] if "time" in request.form.keys() else post.time
 
     db.session.commit()
 
@@ -439,6 +484,7 @@ def update_blog_post(post_id):
 
 
 @admin_bp.route('/blog_posts/<int:post_id>', methods=['DELETE'])
+@auth.login_required
 def delete_blog_post(post_id):
     post = BlogPost.query.get_or_404(post_id)
     if post.thumbnail:
@@ -450,3 +496,52 @@ def delete_blog_post(post_id):
     db.session.delete(post)
     db.session.commit()
     return jsonify({"message": "Blog post deleted successfully!"})
+
+
+
+
+
+@auth.verify_password
+def verify_password(username, password):
+    user = Admin.query.filter_by(username = username).first()
+    if not user:
+         return False
+    if not check_password_hash(user.password_hash, password):
+        return False
+    # g.user = user
+    return True
+
+
+@admin_bp.route('/forgotpassword', methods=['POST'])
+def forgotpassword():
+    username = request.json.get('username')
+    # Check for blank requests
+    if username is None:
+        print("Plwase enter a valid username")
+        return (jsonify({'msg': "Please enter a valid username"}), 400)
+
+    # Check for existing users
+    if not Admin.query.filter_by(username = username).first():
+        return (jsonify({'msg': "Please enter a valid username"}), 400)
+
+    
+    password = str(uuid.uuid4())[0:8]
+    #check of last reset
+    user = Admin.query.filter_by(username = username).first()
+    if user.last_reset:
+        time_diff = datetime.now() - user.last_reset
+        if time_diff.days < 1:
+            return (jsonify({'msg': "Please try again after 24 hours"}), 400)
+    print(password)
+    msg = Message(f'Password reset request!', sender = 'meliuswebsite@gmail.com', recipients = ['namansaksham13@gmail.com'])
+    msg.body = f"Your new password is {password} \n\nEmail: {email}\n\nDescription: {description}"
+    mail.send(msg)
+    #hash password
+    hashed_password = generate_password_hash(password)
+    #update password
+    user.password_hash = hashed_password
+    db.session.commit()
+    #update last reset
+    user.last_reset = datetime.now()
+    db.session.commit()
+    return (jsonify({'msg': f"password for username : {user.username} mailed to the admin"}), 201)

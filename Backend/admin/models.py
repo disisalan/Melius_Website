@@ -13,6 +13,14 @@ class BlogPost(db.Model):
     description = db.Column(db.Text, nullable=False)
     created_on = db.Column(db.DateTime, default=datetime.utcnow)
     is_public = db.Column(db.Boolean, default=False)
+    instagram_link = db.Column(db.String(255))
+    linkedin_link = db.Column(db.String(255))
+    pdf_link = db.Column(db.String(255))
+    drive_link = db.Column(db.String(255))
+    venue = db.Column(db.String(255))
+    mode = db.Column(db.String(255))
+    date = db.Column(db.Date)
+    time = db.Column(db.Time)
 
 class Member(db.Model):
     id=db.Column(db.Integer,primary_key=True)
@@ -23,6 +31,9 @@ class Member(db.Model):
     is_public=db.Column(db.Boolean,default=False)
     is_active=db.Column(db.Boolean,default=False)
     is_core = db.Column(db.Boolean,default=False)
+    instagram_link = db.Column(db.String(255))
+    linkedin_link = db.Column(db.String(255))
+    course = db.Column(db.String(255))
 
 
 class ContactUs(db.Model):
@@ -43,3 +54,10 @@ class Project(db.Model):
     instagram_link = db.Column(db.String(255))
     linkedin_link = db.Column(db.String(255))
     is_public = db.Column(db.Boolean, default=False)
+    partner_link = db.Column(db.String(255))
+
+class Admin(db.Model):
+    id = db.Column(db.Integer, primary_key = True)
+    username = db.Column(db.String(32), index = True)
+    password_hash = db.Column(db.String(255))
+    last_reset = db.Column(db.DateTime, default=datetime.utcnow)
