@@ -10,6 +10,8 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/nav";
 import Projects from "./Components/Projects";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import EventDetail from "./Components/event_detail";
+import ProjectDetail from "./Components/ProjectDetail";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -20,15 +22,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="/about" element={<About />} />
                 <Route path="/team" element={<TeamList />} />
                 <Route path="/projects" element={<Projects />} />
-                {/* <Route path="/projects/:name" element={<Projects />} /> */}
+                <Route path="/projects/:id" element={<ProjectDetail />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/events" element={<Events />} />
-                {/* <Route path="/events/:name" element={<Event />} /> */}
+                <Route path="/events/:id" element={<EventDetail />} />
             </Routes>
             {/* <EventDetail /> */}
             {/* <Events /> */}
             {/* <Projects /> */}
-            <Footer/>
+            <Footer />
         </BrowserRouter>
     </React.StrictMode>
 );
