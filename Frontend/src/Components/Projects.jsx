@@ -15,8 +15,8 @@ function Projects() {
     }, []);
     return (
         <div className="bg-black font-inter px-6 lg:px-24 text-white">
-            <h1 className="py-5 font-poppins text-3xl lg:text-5xl font-bold border-b-4 border-blue">
-                Events
+            <h1 className="py-5 font-poppins text-3xl pt-24 lg:text-5xl font-bold border-b-4 border-blue">
+                Projects
             </h1>
 
             {/* Projects Container */}

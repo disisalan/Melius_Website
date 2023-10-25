@@ -27,9 +27,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="/events" element={<Events />} />
                 <Route path="/events/:id" element={<EventDetail />} />
             </Routes>
-            {/* <EventDetail /> */}
-            {/* <Events /> */}
-            {/* <Projects /> */}
             <Footer />
         </BrowserRouter>
     </React.StrictMode>

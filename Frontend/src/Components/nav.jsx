@@ -112,7 +112,7 @@ export default function Navbar() {
                 </li>
               </a>
               <a href="">
-                <li><Link to='/'>Services</Link></li>
+                <li><Link to='/events'>Events</Link></li>
               </a>
               <a href="">
                 <li>
@@ -162,7 +162,7 @@ export default function Navbar() {
                     </li>
                   </a>
                   <a href="#services" className="pb-2 border-b-[1px]">
-                    <li>Services</li>
+                  <Link to="/events">Events</Link>
                   </a>
                   <a href="" className="pb-2 border-b-[1px]">
                     <li>
