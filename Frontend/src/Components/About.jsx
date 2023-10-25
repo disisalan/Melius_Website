@@ -8,7 +8,7 @@ export default function About() {
                 <div className="flex flex-col justify-evenly gap-5 sm:gap-10 lg:flex-row my-10 lg:my-20">
                     {/* Image Parent Window */}
                     <div className="flex justify-center items-center">
-                        <img src="../../Media/bg-1.png" alt="" className="" />
+                        <img src="Frontend/Media/bg-1.png" alt="" className="" />
                     </div>
 
                     {/* Text Section for About Us */}
