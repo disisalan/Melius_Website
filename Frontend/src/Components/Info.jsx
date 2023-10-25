@@ -30,7 +30,7 @@ export default function Info() {
                     </div>
 
                     <div className="flex flex-wrap gap-4 justify-center lg:gap-10">
-                        <img src={"../Media/experiences/CAPS-Logo-removebg-preview.png"} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src="../Media/experiences/CAPS-Logo-removebg-preview.png?" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
                         <img src="../../Media/experiences/ernst-young-ey-logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
                         <img src="../../Media/experiences/Internshala_company_logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
                         <img src="../../Media/experiences/kpmg-logo-1-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
