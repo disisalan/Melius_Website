@@ -1,6 +1,5 @@
 import { React, useEffect, useState } from "react";
 import api from "../axios";
-import EventDetail from "./event_detail";
 import { useNavigate } from "react-router-dom";
 
 function Events() {

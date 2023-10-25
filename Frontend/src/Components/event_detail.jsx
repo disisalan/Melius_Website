@@ -26,7 +26,7 @@ export default function EventDetail() {
                     <img
                         src={`${IMG_URL}/${event.thumbnail}`}
                         alt=""
-                        className="w-[200px] lg:w-[300px] aspect-[10/16] rounded-3xl"
+                        className="w-[200px] lg:w-[500px] aspect-[10/16] rounded-3xl"
                     />
 
                     <div className="text-lg w-full">
@@ -106,7 +106,7 @@ export default function EventDetail() {
                         Event Report
                     </h1>
                     <iframe
-                        src="https://drive.google.com/file/d/1GEpVcVRS6EHBxdSibrytNlmZyl7Na7X4/preview"
+                        src={event.pdf_link}
                         width="100%"
                         height="480"
                         allow="autoplay"

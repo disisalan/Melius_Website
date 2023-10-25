@@ -25,7 +25,7 @@ export default function ProjectDetail() {
                     <img
                         src={`${IMG_URL}/${project.photo}`}
                         alt=""
-                        className="w-[200px] lg:w-[300px] aspect-[10/16] rounded-3xl"
+                        className="w-[200px] lg:w-[450px] aspect-[10/16] rounded-3xl"
                     />
 
                     <div className="text-lg w-full">
@@ -93,7 +93,7 @@ export default function ProjectDetail() {
                         Project Report
                     </h1>
                     <iframe
-                        src="https://drive.google.com/file/d/1GEpVcVRS6EHBxdSibrytNlmZyl7Na7X4/preview"
+                        src={project.pdf_link}
                         width="100%"
                         height="480"
                         allow="autoplay"
