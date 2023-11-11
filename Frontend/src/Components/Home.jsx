@@ -11,7 +11,7 @@ export default function Home() {
             Fueling success through <br />insightful strategies and bold innovations
           </p>
           <div className="mt-5 p-2 md:text-xl md:px-8">
-          <Link to="/contact"><button href="" className="px-4 py-2 flex items-center gap-2 bg-slate-600 rounded-[50px] font-inter font-bold  text-white md:px-5 md:py-1">Get in touch
+          <Link to="/contact"><button href="" className="px-4 py-2 flex items-center gap-2 bg-blue rounded-[50px] font-inter font-bold  text-white md:px-5 md:py-1">Get in touch
            <img src="../Media/arrow-right.png" alt="" className="animate-pulse w-12 md:w-16"/></button></Link>
           </div>
           <div id="social-mob" className="px-3 gap-2 flex items-center [&>svg]:w-9  fill-black  md:hidden">

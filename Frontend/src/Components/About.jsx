@@ -2,7 +2,7 @@ export default function About() {
     return (
         <div className="bg-black pt-20 text-white flex font-poppins">
             {/* Main */}
-            <div className="w-10/12 mx-auto lg:w-3/4">
+            <div className="w-10/12 mx-auto lg:w-3/4">``
 
                 {/* About Us Section */}
                 <div className="flex flex-col justify-evenly gap-5 sm:gap-10 lg:flex-row my-10 lg:my-20">

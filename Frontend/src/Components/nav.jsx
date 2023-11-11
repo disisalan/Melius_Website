@@ -119,7 +119,7 @@ export default function Navbar() {
                   <Link to="/projects">Projects</Link>
                 </li>
               </a>
-              <a href="" className="bg-grey py-2 px-4 rounded-lg">
+              <a href="" className="bg-black py-2 px-4 rounded-lg">
                 <li>
                 <Link to="/contact">Contact Us</Link>
                   </li>
