@@ -42,7 +42,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import Diamond from '../../public/logo_black_bg-removebg-preview.png';
+
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -99,7 +99,7 @@ export default function Navbar() {
           <div>
             <Link to="/">
             <img
-              src={Diamond}
+              src="../assets/logo_black_bg-removebg-preview.png"
               alt=""
               className="w-44 lg:w-48 :py-2 "
             /></Link>
