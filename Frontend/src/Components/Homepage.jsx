@@ -9,7 +9,7 @@ export default function Hompage() {
     return (
         <>
             <div className="relative ">
-                <div className="absolute h-[100%] w-[100%] bg-[url('./../Public/pexels-charlotte-may-5825604.jpg')] bg-cover rotate-180 -z-10"></div>
+                <div className="absolute h-[100%] w-[100%] bg-[url('./../Public/bg-1.png')] bg-cover rotate-180 -z-10"></div>
                 <Home />
             </div>
             <Services />
