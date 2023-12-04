@@ -4,7 +4,7 @@ import Services from "./Services";
 import Info from "./Info";
 import Team from "./Team";
 import Contact from "./Contact";
-import HomePageImg from "/bg.jpg";
+import HomePageImg from "../../public/bg.jpg";
 
 export default function Hompage() {
     return (
