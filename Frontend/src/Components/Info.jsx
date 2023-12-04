@@ -1,15 +1,15 @@
-import Caps from "/CAPS-Logo-removebg-preview.png"
-import EYLogo from "/ernst-young-ey-logo.png"
-import Internshala from "/Internshala_company_logo.png";
-import Kpmg from "/kpmg-logo-1-removebg-preview.png";
-import Lenskart from "/Lenskart-Logo.png";
-import MarksNSpencer from "/Marks_and_Spencer_Logo.png";
-import MaxLife from "/Max_Life_Insurance_logo-removebg-preview.png";
-import Mazars from "/mazars-logo.png";
-import MobiKwik from "/MobiKwik-Logo.png";
-import Natwest from "/Natwest-Logo-removebg-preview.png";
-import NITIAyog from "/NITI-Aayog-logo-removebg-preview.png";
-import SBICard from "/SBI_card_logo-removebg-preview.png";
+import Caps from "../../Public/CAPS-Logo-removebg-preview.png"
+import EYLogo from "../../Public/ernst-young-ey-logo.png"
+import Internshala from "../../Public/Internshala_company_logo.png";
+import Kpmg from "../../Public/kpmg-logo-1-removebg-preview.png";
+import Lenskart from "../../Public/Lenskart-Logo.png";
+import MarksNSpencer from "../../Public/Marks_and_Spencer_Logo.png";
+import MaxLife from "../../Public/Max_Life_Insurance_logo-removebg-preview.png";
+import Mazars from "../../Public/mazars-logo.png";
+import MobiKwik from "../../Public/MobiKwik-Logo.png";
+import Natwest from "../../Public/Natwest-Logo-removebg-preview.png";
+import NITIAyog from "../../Public/NITI-Aayog-logo-removebg-preview.png";
+import SBICard from "../../Public/SBI_card_logo-removebg-preview.png";
 
 export default function Info() {
     return (

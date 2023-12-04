@@ -1,8 +1,8 @@
-import AboutImg from '/aboutImage.png';
-import OurVision from '/ourVisionImage.png'
-import Mission1 from '/missions.png'
-import Mission2 from '/missions.png'
-import Mission3 from '/missions.png'
+import AboutImg from '../../Public/aboutImage.png';
+import OurVision from '../../Public/ourVisionImage.png'
+import Mission1 from '../../Public/missions.png'
+import Mission2 from '../../Public/missions.png'
+import Mission3 from '../../Public/missions.png'
 
 export default function About() {
     return (

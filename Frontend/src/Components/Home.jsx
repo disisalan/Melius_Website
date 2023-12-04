@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Arrow from "/arrow-right.png";
+import Arrow from "../../Public/arrow-right.png";
 
 
 export default function Home() {
