@@ -123,6 +123,11 @@ export default function Navbar() {
                                     <Link to="/projects">Projects</Link>
                                 </li>
                             </a>
+                            <a href="">
+                                <li>
+                                    <Link to="/team">Team</Link>
+                                </li>
+                            </a>
                             <a
                                 href=""
                                 className="bg-black py-2 px-4 rounded-lg"
@@ -177,6 +182,13 @@ export default function Navbar() {
                                     <a href="" className="pb-2 border-b-[1px]">
                                         <li>
                                             <Link to="/projects">Projects</Link>
+                                        </li>
+                                    </a>
+                                    <a href="" className="pb-2 border-b-[1px]">
+                                        <li>
+                                            <Link to="/team">
+                                                Team
+                                            </Link>
                                         </li>
                                     </a>
                                     <a href="" className="pb-2 border-b-[1px]">

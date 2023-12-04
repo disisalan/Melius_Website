@@ -4,12 +4,16 @@ import Services from "./Services";
 import Info from "./Info";
 import Team from "./Team";
 import Contact from "./Contact";
+import HomePageImg from "/bg.jpg";
 
 export default function Hompage() {
     return (
         <>
             <div className="relative ">
-                <div className="absolute h-[100%] w-[100%] bg-[url('./../Public/bg-1.png')] bg-cover rotate-180 -z-10"></div>
+                <div 
+                    className="absolute h-[100%] w-[100%] bg-cover -z-10"
+                    style={{ backgroundImage: `url(${HomePageImg})` }}
+                ></div>
                 <Home />
             </div>
             <Services />

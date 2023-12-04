@@ -1,8 +1,48 @@
 import axios from "axios";
-export default function Contact() {
-  const handleSubmit = async (event) => {
+import { useState, useEffect } from 'react';
 
+export default function Contact() {
+
+  const [ formData, setFormData ] = useState({
+    Name: "",
+    Contact: "",
+    Email: "",
+    Subject: "",
+    Message: "",
+  });
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      // send formData to endpoint
+      const response = await axios.post("/ENDPOINT_CONTACT?", formData);
+      console.log("Response:", response.data);
+  
+      // reset formdata after submission
+      setFormData({
+        Name: "",
+        Contact: "",
+        Email: "",
+        Subject: "",
+        Message: "",
+      });
+
+    } catch (exception) {
+      console.error("Error during submission:", exception);
+
+    }
   };
+
+  const handleChange = (event) => {
+    const { name, value} = event.target;
+
+    setFormData({
+      ...formData,
+      [ name ]: value
+    });
+
+  }
 
   return (
     <div className="bg-black font-inter px-6 pt-20  lg:px-24  text-white">
@@ -15,10 +55,10 @@ export default function Contact() {
             className=" flex flex-col  gap-4"
             onSubmit={handleSubmit}
           >
-            <div class="">
+            <div className="">
               <label
                 for="name"
-                class="mb-3 block text-base font-medium text-white"
+                className="mb-3 block text-base font-medium text-white"
               >
                 Full Name
               </label>
@@ -26,13 +66,15 @@ export default function Contact() {
                 type="text"
                 name="Name"
                 placeholder="Jhon Doe"
-                class="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
+                onChange={handleChange}
+                value={formData.Name}
+                className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
               />
             </div>
-            <div class="">
+            <div className="">
               <label
                 for="email"
-                class="mb-3 block text-base font-medium text-white"
+                className="mb-3 block text-base font-medium text-white"
               >
                 Contact
               </label>
@@ -40,13 +82,15 @@ export default function Contact() {
                 type="text"
                 name="Contact"
                 placeholder="1234567890"
-                class="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
+                onChange={handleChange}
+                value={formData.Contact}
+                className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
               />
             </div>
-            <div class="">
+            <div className="">
               <label
                 for="email"
-                class="mb-3 block text-base font-medium text-white"
+                className="mb-3 block text-base font-medium text-white"
               >
                 Email Address
               </label>
@@ -54,13 +98,15 @@ export default function Contact() {
                 type="email"
                 name="Email"
                 placeholder="example@domain.com"
-                class="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
+                onChange={handleChange}
+                value={formData.Email}
+                className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
               />
             </div>
-            <div class="">
+            <div className="">
               <label
                 for="subject"
-                class="mb-3 block text-base font-medium text-white"
+                className="mb-3 block text-base font-medium text-white"
               >
                 Subject
               </label>
@@ -68,13 +114,15 @@ export default function Contact() {
                 type="text"
                 name="Subject"
                 placeholder="Enter your subject"
-                class="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
+                onChange={handleChange}
+                value={formData.Subject}
+                className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
               />
             </div>
-            <div class="">
+            <div className="">
               <label
                 for="message"
-                class="mb-3 block text-base font-medium text-white"
+                className="mb-3 block text-base font-medium text-white"
               >
                 Message
               </label>
@@ -82,11 +130,13 @@ export default function Contact() {
                 rows="4"
                 name="Message"
                 placeholder="Type your message"
-                class="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
+                onChange={handleChange}
+                value={formData.Message}
+                className="w-full border-2 rounded-lg border-blue  bg-slate-800 py-3 px-6 text-base font-medium text-white outline-none focus:border-[#38348b] focus:shadow-md"
               ></textarea>
             </div>
             <button
-              class=" w-[50%] hover:shadow-form rounded-md bg-blue py-3 px-8 text-base font-semibold text-white outline-none"
+              className=" w-[50%] hover:shadow-form rounded-md bg-blue py-3 px-8 text-base font-semibold text-white outline-none"
               type="submit"
             >
               Submit

@@ -1,14 +1,20 @@
+import AboutImg from '/aboutImage.png';
+import OurVision from '/ourVisionImage.png'
+import Mission1 from '/missions.png'
+import Mission2 from '/missions.png'
+import Mission3 from '/missions.png'
+
 export default function About() {
     return (
-        <div className="bg-black pt-20 text-white flex font-poppins">
+        <div className="bg-black text-white flex font-poppins">
             {/* Main */}
-            <div className="w-10/12 mx-auto lg:w-3/4">``
+            <div className="w-10/12 mx-auto lg:w-3/4">
 
                 {/* About Us Section */}
                 <div className="flex flex-col justify-evenly gap-5 sm:gap-10 lg:flex-row my-10 lg:my-20">
                     {/* Image Parent Window */}
                     <div className="flex justify-center items-center">
-                        <img src="Frontend/Media/bg-1.png" alt="" className="" />
+                        <img src={AboutImg} alt="" className="" />
                     </div>
 
                     {/* Text Section for About Us */}
@@ -23,7 +29,7 @@ export default function About() {
                 <div className="flex flex-col justify-evenly gap-5 sm:gap-10 lg:flex-row-reverse my-10 lg:my-20">
                     {/* Image Parent Window */}
                     <div className="flex justify-center items-center">
-                        <img src="../Media/bg-2.png" alt="" className="" />
+                        <img src={OurVision} alt="" className="" />
                     </div>
 
                     {/* Text Section for Our visions */}
@@ -45,7 +51,7 @@ export default function About() {
 
                         {/* mission 1 */}
                         <div className="mx-auto my-3 lg:my-10">
-                            <img src="../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
+                            <img src={Mission1} alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">
@@ -56,7 +62,7 @@ export default function About() {
 
                         {/* mission 2 */}
                         <div className="mx-auto my-3 lg:my-10">
-                            <img src="../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
+                            <img src={Mission2} alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">
@@ -67,7 +73,7 @@ export default function About() {
 
                         {/* mission 3 */}
                         <div className="mx-auto my-3q lg:my-10">
-                            <img src="../media/idea-sample-placeholder.png" alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
+                            <img src={Mission3} alt="" className="w-[60%] mx-auto md:w-2/4 lg:w-[60%]" />
 
                             {/* caption for mission */}
                             <div className="text-center mt-2">

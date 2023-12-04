@@ -1,3 +1,16 @@
+import Caps from "/CAPS-Logo-removebg-preview.png"
+import EYLogo from "/ernst-young-ey-logo.png"
+import Internshala from "/Internshala_company_logo.png";
+import Kpmg from "/kpmg-logo-1-removebg-preview.png";
+import Lenskart from "/Lenskart-Logo.png";
+import MarksNSpencer from "/Marks_and_Spencer_Logo.png";
+import MaxLife from "/Max_Life_Insurance_logo-removebg-preview.png";
+import Mazars from "/mazars-logo.png";
+import MobiKwik from "/MobiKwik-Logo.png";
+import Natwest from "/Natwest-Logo-removebg-preview.png";
+import NITIAyog from "/NITI-Aayog-logo-removebg-preview.png";
+import SBICard from "/SBI_card_logo-removebg-preview.png";
+
 export default function Info() {
     return (
         <div className="flex text-white bg-black font-inter">
@@ -30,18 +43,18 @@ export default function Info() {
                     </div>
 
                     <div className="flex flex-wrap gap-4 justify-center lg:gap-10">
-                        <img src="../Media/experiences/CAPS-Logo-removebg-preview.png?" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/ernst-young-ey-logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/Internshala_company_logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/kpmg-logo-1-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/Lenskart-Logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/Marks_and_Spencer_Logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/Max_Life_Insurance_logo-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/mazars-logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/MobiKwik-Logo.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/Natwest-Logo-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/NITI-Aayog-logo-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        <img src="../../Media/experiences/SBI_card_logo-removebg-preview.png" alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={Caps} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={EYLogo} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={Internshala} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={Kpmg} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={Lenskart} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={MarksNSpencer} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={MaxLife} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={Mazars} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={MobiKwik} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={Natwest} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={NITIAyog} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
+                        <img src={SBICard} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
                         {/* <img src="../Media/experiences/VISTARA-LOGO.png" alt="" className="bg-white w-[100px] px-1 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" /> */}
                     </div>
                 </div>
