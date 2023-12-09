@@ -10,6 +10,7 @@ import MobiKwik from "../../Public/MobiKwik-Logo.png";
 import Natwest from "../../Public/Natwest-Logo-removebg-preview.png";
 import NITIAyog from "../../Public/NITI-Aayog-logo-removebg-preview.png";
 import SBICard from "../../Public/SBI_card_logo-removebg-preview.png";
+// import Vistara from "../../Public/experiences/VISTARA-LOGO.png"
 
 export default function Info() {
     return (
@@ -21,12 +22,16 @@ export default function Info() {
                 <div>
                     {/* Heading */}
                     <div className="flex justify-between items-center gap-3 md:gap-5">
-                        <h1 className="font-poppins font-bold py-2 text-4xl w-max md:text-4xl lg:text-5xl xl:text-6xl">What do Consultants DO?</h1>
+                        <h1 className="font-poppins font-bold py-2 text-4xl w-max md:text-4xl lg:text-5xl xl:text-6xl">
+                            What do Consultants DO?
+                        </h1>
                         <div className="md:h-px md:bg-white md:flex-grow"></div>
                     </div>
 
-                    {/* Description */} 
-                    <p className="w-11/12 flex flex-wrap mx-auto my-2 text-sm font-light md:text-2xl md:my-6 md:text-center">Business consultant is like the Sherlock Holmes of corporate world, but instead of solving crimes, they're cracking the case of why your sales are as elusive as a unicorn. Armed with a magnifying glass of data and a pipe filled with wisdon (or maybe just a really good cup of coffee), they dive deep into your company's operations, em...</p>
+                    {/* Description */}
+                    <p className="w-11/12 flex flex-wrap mx-auto my-2 text-sm font-light md:text-base md:my-6 md:text-center">
+                        At Melius, we are the driving force behind innovation, problem-solving, and success. Our expert consultants are your strategic partners in navigating the dynamic business landscape of today. From data-driven insights to cutting-edge strategies, we deliver tailored solutions to amplify your potential and drive transformation. We specialize in market analysis, digital transformation, and organizational optimization, guiding you towards higher profitability and sustainable growth. With a finger on the pulse of emerging trends and a commitment to excellence, our consultants empower your business to thrive in an ever-evolving world. Discover how we can revolutionize your business strategy.
+                    </p>
 
                     {/* Read more button */}
                     <div className="flex my-5">
@@ -55,7 +60,7 @@ export default function Info() {
                         <img src={Natwest} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
                         <img src={NITIAyog} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
                         <img src={SBICard} alt="" className="bg-white w-[100px] p-2 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" />
-                        {/* <img src="../Media/experiences/VISTARA-LOGO.png" alt="" className="bg-white w-[100px] px-1 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" /> */}
+                        {/* <img src={Vistara} alt="" className="bg-white w-[100px] px-1 lg:w-[15%] lg:p-3 aspect-[3/2] object-contain rounded-xl" /> */}
                     </div>
                 </div>
             </div>
